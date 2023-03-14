@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo De Texto</title>
+    <a href="index.html">Volver Al Inicio</a>
+    <br>
+    <br>
+    <a href="#ultimo">Ir al final de la pagina</a>
+    <br>
+    <br>
+    <a href="guiaHTML.html">Guia De HTML Sobre muchas cosas</a>
+    <br>
+    <br>
+    <a href="controlDeTexto.html">Guia De HTML Sobre El Control De Texto</a><!-- para hacer que una pagina se abra en otra pestana utilizarlo asi <a href="manejoDeTexto.html" target="_blank">Guia De HTML De Manejo De Texto </a> -->
+    <br>
+    <br>
+    <link rel="stylesheet" href="style.css"> <!-- Investigado en internet para hacer bordes  -->
+
+</head>
+<h1>Manejo De Texto</h1>
+
+<body>
+    <table>
+        <thead>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Descripcion
+            </th>
+            <th>
+                Uso
+            </th>
+            <th>
+                Ejemplo
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> &lt;h1&gt; - &lt;h6&gt;: Los elementos de encabezado de sección HTML </td>
+                <td> Los elementos HTML &lt;h1&gt; - &lt;h6&gt; representan seis niveles de encabezados de sección. &lt;h1&gt; es el nivel de sección más alto y &lt;h6&gt; es el más bajo. </td>
+                <td> Las aplicaciones de usuario pueden utilizar la información de encabezado para construir automáticamente una tabla de contenido para un documento.
+                     No utilice elementos de encabezado para cambiar el tamaño del texto. En su lugar, utilice la propiedad CSS font-size.
+                     No omita los niveles de encabezado: comience siempre desde &lt;h1&gt;, seguido de &lt;h2&gt; y así sucesivamente.</td>
+                <td>Normalemnte se utiliza para destacar titulos.</td>
+            </tr>
+                        
+            <tr>
+                <td> &lt;br&gt;: El elemento de salto de línea </td>
+                <td>El elemento HTML &lt;br&Gt; produce un salto de línea en el texto (retorno de carro).
+                    Es útil para escribir un poema o un discurso, donde la división de líneas es significativa.</td>
+                    <td></td>
+                    <td> un ejemplo podria ser asi 
+                    <p> O’er all the hilltops<br>
+                        Is quiet now,<br>
+                        In all the treetops<br>
+                        Hearest thou<br>
+                        Hardly a breath;<br>
+                        The birds are asleep in the trees:<br>
+                        Wait, soon like these<br>
+                        Thou too shalt rest.
+                    </p> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>&lt;hr&gt;: El elemento de ruptura temática (regla horizontal)</td>
+                <td> El elemento HTML &lt;hr&gt; representa una ruptura temática entre elementos a nivel de párrafo: por ejemplo,
+                 un cambio de escena en una historia o un cambio de tema dentro de una sección.</td>
+                 <td></td>
+                 <td><hr>
+                este es el ejemplo :D
+                </td>
+             </tr>
+
+            <tr>
+                <td> &lt;wbr&gt;: El elemento Oportunidad de salto de línea</td>
+                <td> El elemento HTML &lt;wbr&gt; representa una oportunidad de salto de palabra: 
+                una posición dentro del texto donde el navegador puede opcionalmente dividir una línea,
+                aunque sus reglas de división de línea no crearían de otro modo una ruptura en esa ubicación.
+                <td></td>
+                <td>http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</td>
+            </tr>
+
+            <tr>
+                <td> &lt;sub&gt;: El elemento Subíndice</td>
+                <td> El elemento HTML &lt;sub&gt; especifica el texto en línea que debe mostrarse como subíndice  
+                únicamente por motivos tipográficos. Los subíndices generalmente se representan con una 
+                línea de base más baja usando texto más pequeño.</td>
+                <td></td>
+                <td>Ejemplo: ejemplo:C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></td>
+            </tr>
+
+            <tr>
+                <td> &lt;sup&gt;: El elemento Superíndice</td>
+                <td> El elemento HTML &lt;sup&gt; especifica el texto en línea que se mostrará como superíndice únicamente por motivos tipográficos. 
+                 Los superíndices generalmente se representan con una línea de base elevada usando texto más pequeño.</td>
+                 <td></td>
+                <td>5<sup>2</sup>=25</td>
+            </tr>
+
+            <tr>
+                <td> &lt;q&gt;: el elemento de cotización en línea</td>
+                <td>El elemento HTML &lt;q&gt; indica que el texto adjunto es una cita breve en línea. La mayoría de los navegadores modernos implementan esto encerrando el texto entre comillas. Este elemento está diseñado para citas cortas que no requieren saltos de párrafo; para citas largas use el elemento &lt;blockquote&gt;.</td>
+                <td></td>
+                <td><p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+            </tr>
+
+            <tr>
+                <td>&lt;blockquote&gt;: el elemento de cotización en bloque</td>
+                <td>El elemento HTML &lt;blockquote&gt; indica que el texto adjunto es una cita extendida. Por lo general, esto se representa visualmente mediante identacion. Se puede dar una URL para la fuente de la cita usando el atributo cite, mientras que una representación de texto de la fuente se puede dar usando el elemento &lt;cite&gt;.</td>
+                <td></td>
+                <td><blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <p>Las palabras pueden ser como rayos X, si las usas correctamente, atravesarán cualquier cosa. Lees y te atraviesa.</p>
+                    </blockquote>
+                    —Aldous Huxley, <cite>Brave New World</cite>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&lt;cite&gt;: el elemento de cita</td>
+                <td>El elemento HTML &lt;cite&gt; se utiliza para marcar el título de un trabajo creativo citado. La referencia puede estar en forma abreviada de acuerdo con las convenciones apropiadas al contexto relacionadas con los metadatos de citas.</td>
+                <td></td>
+                <td><blockquote>
+                        <p>Era un dia frio y brillante de abrilday in April, y el reloj mostraba las 13.</p>
+                    </blockquote>
+                    Primera oracion <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Parte 1, capitulo 1).
+                </td>
+            </tr>
+
+            <tr>
+                <td>&lt;dfn&gt;: el elemento de definición</td>
+                <td>El elemento HTML &lt;dfn&gt; se utiliza para indicar el término que se define dentro del contexto de una frase u oración de definición. El elemento antepasado &lt;p&gt;, el par &lt;dt&gt;/&lt;dd&gt; o el antepasado &lt;sección&gt; más cercano del elemento &lt;dfn&gt; se considera la definición del término.</td>
+                <td>Si el elemento &lt;dfn&gt; tiene un atributo de &lt;title&gt;, se considera que el valor del atributo de título es el término que se está definiendo. El elemento aún debe tener texto dentro, pero ese texto puede ser una abreviatura (quizás usando &lt;abbr&gt;) u otra forma del término.Si &lt;dfn&gt; contiene un solo elemento secundario y no tiene ningún contenido de texto propio, y el elemento secundario es un elemento &lt;abbr&gt;con un atributo de título en sí mismo, entonces el valor exacto del título del elemento &lt;abbr&gt;es el término que se define.De lo contrario, el contenido de texto del elemento &lt;dfn&gt; es el término que se define.
+                si el elemento &lt;dfn&gt; tiene un atributo de título, debe contener el término que se define y ningún otro texto.</td>
+                <td><p>Un <dfn id="definicion-validador">validador</dfn> es un programa que busca errores de sintaxis en código o documentos.</p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;abbr&gt;: El elemento abreviatura</td>
+                <td>The &lt;abbr&gt; HTML element represents an abbreviation or acronym.</td>
+                <td>Cuando se usa una abreviatura y desea proporcionar una expansión o definición fuera del flujo del contenido del documento, use &lt;abbr&gt;con un título apropiado.
+                Para definir una abreviatura que puede ser desconocida para el lector, presente el término usando &lt;abbr&gt; y texto en línea que proporcione la definición. Incluya un atributo de título solo cuando la expansión o definición en línea no esté disponible.
+                Cuando es necesario anotar semánticamente la presencia de una abreviatura en el texto, el elemento &lt;abbr&gt; es útil. Esto se puede utilizar, a su vez, con fines de estilo o secuencias de comandos.
+                 Puede utilizar &lt;abbr&gt; junto con &lt;dfn&gt; para establecer definiciones de términos que son abreviaturas o acrónimos.</td>
+                <td><p>Puede utilizar <abbr>CSS</abbr> (hojas de estilo en cascada) para diseñar su <abbr>HTML</abbr> (lenguaje de marcado de hipertexto)</td>
+            </tr>
+
+            <tr>
+                <td>&lt;small&gt;: el elemento de comentario lateral</td>
+                <td>El elemento HTML &lt;small&gt; representa comentarios secundarios y letra pequeña, </td>
+                <td>Se Puede Usar como derechos de autor y texto legal, independientemente de su estilo de presentación. De forma predeterminada, representa el texto dentro de un tamaño de fuente más pequeño, como de pequeño a x-pequeño.</td>
+                <td><p>Esta es la primera oración.<small>Toda esta oración está en minúsculas.</small></p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;ins&gt;</td>
+                <td>El elemento HTML &lt;ins&gt; representa un rango de texto que se ha agregado a un documento.</td>
+                <td> Puede usar el elemento &lt;del&gt;para  representar de manera similar un rango de texto que se ha eliminado del documento.</td>
+                <td><p>“¡Llegas tarde!”</p>
+                    <del>
+                        <p>“Me disculpo por la demora”.</p>
+                    </del>
+                    <ins citar="../howtobeawizard.html" datetime="2018-05">
+                        <p>“Un mago nunca llega tarde…”</p>
+                    </ins></td>
+            </tr>
+
+            <tr>
+                <td>&lt;del&gt;: el elemento de texto eliminado</td>
+                <td>El elemento HTML &lt;del&gt; representa un rango de texto que se ha eliminado de un documento.</td>
+                <td> Esto se puede usar al representar "cambios de seguimiento" o información de diferencias de código fuente.</td>
+                <td><p>“¡Llegas tarde!”</p>
+                    <del>
+                        <p>“Me disculpo por la demora”.</p>
+                    </del>
+                    <ins citar="../howtobeawizard.html" datetime="2018-05">
+                        <p>“Un mago nunca llega tarde…”</p>
+                    </ins></td></td>
+            </tr>
+
+            <tr>
+                <td>&lt;s&gt;: el elemento tachado</td>
+                <td>El elemento HTML &lt;s&gt; muestra el texto tachado o con una línea que lo atraviesa.</td>
+                <td> Usa el elemento &lt;s&gt; para representar cosas que ya no son relevantes o precisas. Sin embargo, &lt;s&gt; no es apropiado para indicar ediciones de documentos; para ello, utilice los elementos &lt;del&gt; e &lt;ins&gt;, según corresponda.</td>
+                <td><p><s>Habrá algunas entradas disponibles en la taquilla esta noche.</s></p>
+                    <p>¡AGOTADO!</p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;code&gt;: el elemento de código en línea</td>
+                <td>El elemento HTML &lt;code&gt; muestra su contenido con estilo para indicar que el texto es un fragmento corto de código de computadora. De forma predeterminada, el texto del contenido se muestra con la fuente monoespaciada predeterminada del agente de usuario.</td>
+                <td>Se puede utilizar para mostrar codigo </td>
+                <td><p>El método <code>push()</code> agrega uno o más elementos al final de una matriz y devuelve la nueva longitud de la matriz.</p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;samp&gt;: el elemento de salida de muestra</td>
+                <td>El elemento HTML &lt;samp&gt; se utiliza para encerrar texto en línea que representa la salida de muestra (o citada) de un programa de computadora.</td>
+                <td>Su contenido generalmente se representa utilizando la fuente monoespaciada predeterminada del navegador (como Courier o Lucida Console)</td>
+                <td><p>Estaba tratando de iniciar mi computadora, pero recibí este divertido mensaje:</p>
+                    <p><samp>Teclado no encontrado <br>Presione F1 para continuar</samp></p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;kbd&gt;: el elemento de entrada de teclado</td>
+                <td>El elemento HTML &lt;kbd&gt; representa un tramo de texto en línea que indica la entrada textual del usuario desde un teclado, entrada de voz o cualquier otro dispositivo de entrada de texto.</td>
+                <td> Por convención, el agente de usuario presenta de forma predeterminada el contenido de un elemento &lt;kbd&gt; utilizando su fuente monoespaciada predeterminada, aunque el estándar HTML no lo exige.</td>
+                <td><p>Presione <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> para volver a renderizar una página MDN.</p></td>
+            </tr>
+
+            <tr>
+                <td>&lt;pre&gt;: El elemento de texto preformateado</td>
+                <td>El elemento HTML &lt;pre&gt; representa texto preformateado que debe presentarse exactamente como está escrito en el archivo HTML.</td>
+                <td> El texto normalmente se representa con una fuente no proporcional o monoespaciada. Los espacios en blanco dentro de este elemento se muestran tal como están escritos.</td>
+                <td><pre>
+                    L          TE
+                      A       A
+                        C    V
+                         R A
+                         DOU
+                         LOU
+                        REUSE
+                        QUE TU
+                        PORTES
+                      ET QUI T'
+                      ORNE O CI
+                       VILISÉ
+                      OTE-  TU VEUX
+                       LA    BIEN
+                      SI      RESPI
+                              RER       - Apollinaire
+                  </pre></td>
+            </tr>
+
+            <tr>
+                <td>&lt;address&gt;: El elemento Dirección de contacto</td>
+                <td>
+                    El elemento HTML &lt;address&gt; indica que el HTML adjunto proporciona información de contacto para una persona o personas, o para una organización.</td>
+                <td></td>
+                <td><p>Soy el autor de la pagina :</p>
+
+                    <address>
+                      <a href="deugartetadeo@gmail.com">deugartetadeo@gmail.com</a><br>
+                      <a href="tel:+59170309992">(591)70309992</a>
+                    </address>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#top">Ir Al Inicio De Pagina</a>        
+</body> 
+</html>

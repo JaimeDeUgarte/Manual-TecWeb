@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control De HTML</title>
+    <a href="index.html">Volver Al Inicio</a>
+    <br>
+    <br>
+    <a href="#ultimo">Ir al final de la pagina</a>
+    <br>
+    <br>
+    <a href="guiaHTML.html">Guia De HTML Sobre muchas cosas</a>
+    <br>
+    <br>
+    <a href="manejoDeTexto.html">Guia De HTML De Manejo De Texto </a> <!-- para hacer que una pagina se abra en otra pestana utilizarlo asi <a href="manejoDeTexto.html" target="_blank">Guia De HTML De Manejo De Texto </a> -->
+    <br>
+    <br>
+    <link rel="stylesheet" href="style.css"> <!-- Investigado en internet para hacer bordes  -->
+</head>
+<h1>Control de Texto</h1>
+<body>
+    <table>
+        <thead>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Descripcion
+            </th>
+            <th>
+                Uso
+            </th>
+            <th>
+                Ejemplo
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Mejor svg que jpg para no perder calidad-->
+                <td>&lt;img&gt;: el elemento de inserción de imagen</td>
+                <td>El elemento HTML &lt;img&gt; incrusta una imagen en el documento.</td>
+                <td>Se usa para colocar imagenes,de diferentes tipos ya sean jpg , gifs, etc... <br>
+                    NOTA: Mejor utilizar svg que jpg para no perder calidad</td>
+                <td><img src="Imagenes/Draven_0.jpg" alt="Draven" width="200" height="200" /></td>
+                <td><img src="Imagenes/Dravengif.webp" alt="Dravengif" width="200" height="200" /></td>
+            </tr>
+            <tr>
+                <td> &lt;tabla&gt;: El elemento Tabla</td>
+                <td>El elemento HTML &lt;tabla&gt; representa datos tabulares, es decir, información presentada en una tabla bidimensional compuesta por filas y columnas de celdas que contienen datos.</td>
+                <td></td>
+                <td>    
+                    <table>
+                    <caption>Campeones Jugados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="1" rowspan="2">Nombre</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Posicion</th>
+                            <th scope="col">Maestria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Draven</td>
+                            <td>ADC</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Blitz</td>
+                            <td>Supp</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">TOTAL JUGADOS</td>
+                            <td>2</td>
+                        </tr>   
+                    </tfoot>
+                </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&lt;tbody&gt;: el elemento del cuerpo de la tabla</td>
+                <td>El elemento HTML &lt;tbody&gt; encapsula un conjunto de filas de tabla (elementos &lt;tr&gt;), lo que indica que comprenden el cuerpo de la tabla (&lt;table&gt;).</td>
+                <td>El elemento &lt;tbody&gt;, junto con sus elementos &lt;thead&gt; y &lt;tfoot&gt; relacionados, proporcionan información semántica útil que se puede utilizar al renderizar para pantalla o impresora.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;: El elemento Celda de datos de la tabla</td>
+                <td> El elemento HTML &lt;td&gt; define una celda de una tabla que contiene datos. Participa en el modelo de tabla.</td>
+                <td>Se puede utilizar para hacer tablas.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> &lt;tfoot&gt;: El elemento Pie de tabla</td>
+                <td> El elemento HTML &lt;tfoot&gt; define un conjunto de filas que resumen las columnas de la tabla.</td>
+                <td> Se puede utilizar para hacer tablas.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;: el elemento de encabezado de tabla</td>
+                <td>El elemento HTML &lt;th&gt; define una celda como encabezado de un grupo de celdas de tabla. La naturaleza exacta de este grupo está definida por los atributos de alcance y encabezados.</td>
+                <td>Se puede utilizar para hacer tablas.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;: el elemento de encabezado de tabla</td>
+                <td>El elemento HTML &lt;thead&gt; define un conjunto de filas que definen el encabezado de las columnas de la tabla.</td>
+                <td>Se puede utilizar para hacer tablas</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> &lt;tr&gt;: El elemento Fila de la tabla</td>
+                <td> El elemento HTML &lt;tr&gt; define una fila de celdas en una tabla</td>
+                <td> Las celdas de la fila se pueden establecer usando una combinación de elementos &lt;td&gt; (celda de datos) y &lt;th&gt; (celda de encabezado)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;: El elemento ancla</td>
+                <td>El elemento HTML &lt;a&gt; (o elemento ancla), con su atributo href, crea un hipervínculo a páginas web, archivos, direcciones de correo electrónico, ubicaciones en la misma página o cualquier otra cosa que una URL pueda abordar.
+                <td>El contenido dentro de cada &lt;a&gt; debe indicar el destino del enlace. Si el atributo href está presente, presionar la tecla Intro mientras se enfoca en el elemento &lt;a&gt; lo activará.</td></td>
+                <td><p>Puedes Contactarme En:</p>
+                    <ul>
+                      <li><a href="https://Discord.com">Discord</a></li>
+                      <li><a href="deugartetade@gmail.com">Email</a></li>
+                      <li><a href="tel:+59170309992">Phone</a></li>
+                    </ul></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> </td>
+                <td> </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#top">Ir Al Inicio De Pagina</a>    
+</body>
+</html>
